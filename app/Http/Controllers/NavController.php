@@ -18,11 +18,24 @@ class NavController extends Controller
 
     public function show() 
     {
-        dd(Delivery::all());
-
-
-        $articles = Article::all()->load('type');
+        $articles = Article::all()->load('type', 'deliveries');
         return view('articles.show', ['articles' => $articles]);
+    }
+
+    public function insertOne() 
+    {
+        $types = Type::all();
+        $deliveries = Delivery::all();
+       return view('articles.insertOne', ['types' => $types, 'deliveries' => $deliveries]);
+    }
+
+    public function updateOne(Request $request) 
+    {
+        $article = Article::find($request->input('id'));
+        $types = Type::all();
+        $deliveries = Delivery::all();
+        return view('articles.updateOne', ['article' => $article, 'types' => $types, 'deliveries' => $deliveries]);
+        
     }
 
 }

@@ -18,4 +18,15 @@ Route::get('/', function () {
 
 Route::get('/', "NavController@home");
 
+//Show article 
 Route::get('/show', "NavController@show");
+
+//Delete article
+Route::post('/deleteOne', "ArticleController@deleteOne");
+
+//Insert Article
+Route::get('/insertOne', "NavController@insertOne");
+Route::post('/insertOneAction', "ArticleController@insertOneAction");
+
+//Update article
+Route::post('/updateOne', "NavController@updateOne");

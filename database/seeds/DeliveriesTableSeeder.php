@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class DeliverysTableSeeder extends Seeder
+class DeliveriesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,7 +11,7 @@ class DeliverysTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('deliverys')->insert([
+        DB::table('deliveries')->insert([
             [
                 'name' => 'Colisimo',
             ],

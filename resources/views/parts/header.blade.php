@@ -13,7 +13,7 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/">Stock</a></li>
-                <li><a href="/">Insert</a></li>
+                <li><a href="/insertOne">Insert</a></li>
                 <li><a href="/show">Articles</a></li>
             </ul>
         </header>
