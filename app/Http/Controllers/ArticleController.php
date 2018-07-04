@@ -31,7 +31,41 @@ class ArticleController extends Controller
         foreach ($req as $key) {
             $newArticle->deliveries()->attach($key);
         }
+        return redirect('/show');
     }
-        
 
+    public function updateOneAction(Request $request) 
+    {
+        $updateArticle = Article::find($request->input('id'));
+        $updateArticle->name = $request->input('name');
+        $updateArticle->reference = $request->input('reference');
+        $updateArticle->description = $request->input('description');
+        $updateArticle->price = $request->input('price');
+        $updateArticle->amount = $request->input('amount');
+        $updateArticle->type_id = $request->input('type');
+        $updateArticle->image = $request->input('image');
+        $updateArticle->save();
+
+        if ($request->input('deliveries') !== null) {
+            $updateArticle->deliveries()->detach();     
+            $req = $request->input('deliveries');
+            foreach ($req as $value) { 
+                $updateArticle->deliveries()->attach($value); 
+            } 
+            
+        } else {
+                return redirect('/show');
+            }
+
+        return redirect('/show');
+    }
+
+    public function updateAmountAction(Request $request)
+    {      
+        $updateArticleAmount = Article::find($request->input('id'));
+        $updateArticleAmount->amount = $request->input('amount');
+        $updateArticleAmount->save();
+        return redirect('/stock');
+
+    }
 }

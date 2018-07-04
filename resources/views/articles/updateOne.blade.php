@@ -3,8 +3,10 @@
 
 <h1>Welcon in update</h1>
 
-<form action="/insertOneAction" method="post">
+<form action="/updateOneAction" method="post">
     @csrf
+    <input type="hidden" name="id" value="{{ $article->id }}">
+
     <label for="name">name</label>
     <input type="text" name="name" id="name" value="{{ $article->name }}">
 
@@ -23,10 +25,11 @@
     <label for="type">Type</label>
     <select name="type" id="">
             @foreach ($types as $type)
-                @if($article->type_id == $types->id)
+                @if($article->type_id == $type->id)
                      <option selected value="{{ $type->id }}">{{ $type->name }}</option> 
-                @else 
+                @else
                     <option value="{{ $type->id }}">{{ $type->name }}</option> 
+                @endif
             @endforeach
     </select>
 
@@ -41,7 +44,7 @@
     <label for="image">Link of image</label>
     <input type="text" name="image" id="" value="{{ $article->image }}">
 
-    <input type="submit" value="Insert">
+    <input type="submit" value="Update">
 
 </form>
 

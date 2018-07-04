@@ -12,9 +12,10 @@
         <header>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/">Stock</a></li>
+                <li><a href="/stock">Stock</a></li>
                 <li><a href="/insertOne">Insert</a></li>
                 <li><a href="/show">Articles</a></li>
+                <li><a href="/deliveries">Deliveries</a></li>
             </ul>
         </header>
 

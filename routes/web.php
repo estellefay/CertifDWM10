@@ -30,3 +30,15 @@ Route::post('/insertOneAction', "ArticleController@insertOneAction");
 
 //Update article
 Route::post('/updateOne', "NavController@updateOne");
+Route::post('/updateOneAction',"ArticleController@updateOneAction");   
+
+
+//Stock 
+Route::get('/stock', "NavController@showStock");
+
+//Stock update amount
+Route::post('/updateAmount', "NavController@updateAmount");
+Route::post('/updateAmountAction', "ArticleController@updateAmountAction" );
+
+//Deliveries
+Route::get('/deliveries');

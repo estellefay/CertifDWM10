@@ -38,4 +38,15 @@ class NavController extends Controller
         
     }
 
+    public function showStock()
+    {
+        $articles = Article::all();
+        return view('articles.showStock', ['articles' => $articles]);
+    }
+
+    public function updateAmount(Request $request)
+    {
+        $article = Article::find($request->input('id'));
+        return view('articles.updateAmount', ['article' => $article]);
+    }
 }
