@@ -4,18 +4,26 @@
     <div class="global-articles">
             @foreach ($articles as $article)
             <ul class="articles">
-                <li>Name of article : {{ $article->name }}</li>
-                <li>Reference of article : {{ $article->reference }}</li>
-                <li>Description of article : {{ $article->description }}</li>
-                <li>Price of article : {{ $article->price}}</li>
-                <li>Amount of article : {{ $article->amount}}</li>
-                <li>Type :{{ $article->type->name }} </li>
+                <li class="name">Name : {{ $article->name }}</li>
+                <li class="reference">Reference : {{ $article->reference }}</li>
+                <div class="reference-image">
+                        <li class="description">Description : {{ $article->description }}</li>
+                        <li><img src="{{ $article->image }}" alt="" srcset=""></li>
+                </div> 
+                <div class='price-amout-type'>
+                        <li class="price">Price : {{ $article->price}} $</li>
+                        <li class="amount">Amount : {{ $article->amount}}</li>
+                        <li>Type :{{ $article->type->name }} </li>
+                </div>
                 <li>
+                        
                     <ul>
-                            <p>Delivery</p>
+                        <p>Delivery</p>
+                        <div class="articles-delivery">
                             @foreach ($article->deliveries as $delivery)
-                                 <li>{{ $delivery->name }}</li>
+                                 <li class="delivervy">{{ $delivery->name }}</li>
                             @endforeach
+                        </div>
 
                     </ul>
                 </li>

@@ -41,4 +41,11 @@ Route::post('/updateAmount', "NavController@updateAmount");
 Route::post('/updateAmountAction', "ArticleController@updateAmountAction" );
 
 //Deliveries
-Route::get('/deliveries');
+Route::get('/deliveries', "NavController@showDeliveries");
+
+//InsertDeliverie
+Route::post('/insertDelivery', "NavController@insertDelivery");
+Route::post('/insertDeliveryAction', "DeliveryController@insertDeliveryAction");
+
+//Delete Delivery
+Route::post('/deleteOneDelivery', "DeliveryController@deleteDelivery");

@@ -49,4 +49,16 @@ class NavController extends Controller
         $article = Article::find($request->input('id'));
         return view('articles.updateAmount', ['article' => $article]);
     }
+
+    public function showDeliveries()
+    {
+        $deliveries = Delivery::all();
+        return view('deliveries.show', ['deliveries' => $deliveries]);
+    }
+
+    public function insertDelivery()
+    {
+        $deliveries = Delivery::all();
+        return view('deliveries.insert', ['deliveries' => $deliveries]);
+    }
 }
