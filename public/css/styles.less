@@ -29,6 +29,9 @@ body {
                     justify-content: center;
                     color: black;
                     font-family: 'Raleway', sans-serif;
+                    @media (max-width: 500px) {
+                        font-size: 14px;
+                    }
                 }
                 a:hover {
                     background-color: #FEB02D;
@@ -74,7 +77,9 @@ body {
         -moz-box-shadow: inset 6px 10px 104px 55px rgba(254,127,45,0.26);
         box-shadow: inset 6px 10px 104px 55px rgba(254,127,45,0.26);
 
-        
+        .hidden {
+            visibility: hidden;
+        }
         h1 {
             padding: 0;
             margin: 0;
@@ -88,15 +93,33 @@ body {
             flex-wrap: wrap;
             justify-content: space-around;
             font-family: 'Raleway', sans-serif;
-            
+            @media (max-width: 500px) {
+                display: flex;
+                justify-content: space-around;
+            }
+            @media (max-width: 700px) {
+                display: flex;
+                justify-content: space-around;
+            }
             
             .articles {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                @media (max-width: 500px) {
+                    width: 88%;
+                    height: 30vh;
+                }
+                @media (max-width: 700px) and (min-width: 500px) {
+                    width: 65vw;
+                    height: 29vh;
+                }
                 background-color: #A1C181;
                 justify-content: space-around;
                 width: 40vw;
                 padding: 5px;
                 margin: 5px;
-                height: 28vh;
+                height: 31vh;
                 -webkit-box-shadow: inset 6px 10px 104px 55px rgba(87,156,135,0.52);
                 -moz-box-shadow: inset 6px 10px 104px 55px rgba(87,156,135,0.52);
                 box-shadow: inset 6px 10px 104px 55px rgba(87,156,135,0.52);
@@ -107,8 +130,14 @@ body {
                 
                 li {
                     list-style-type: none;
+                    padding-left: 7px;
+                    padding-right: 7px;
                 }
                 img {
+                    @media (max-width: 500px) {
+                        width: 15vw;
+                        height: auto;
+                    }
                     width: 11vw;
                     height: 13vh;
                 }
@@ -338,6 +367,47 @@ body {
             text-decoration: none;
           }
 
+        }
+        .button-js {
+            display: flex;
+            justify-content: center;
+            .btn {
+                background: #A1C181;
+                background-image: -webkit-linear-gradient(top, #A1C181, #579C87);
+                background-image: -moz-linear-gradient(top, #A1C181, #579C87);
+                background-image: -ms-linear-gradient(top, #A1C181, #579C87);
+                background-image: -o-linear-gradient(top, #A1C181, #579C87);
+                background-image: linear-gradient(to bottom, #A1C181, #579C87);
+                -webkit-border-radius: 28;
+                -moz-border-radius: 28;
+                border-radius: 28px;
+                font-family: Arial;
+                color: #233D4D;
+                font-size: 15px;
+                padding: 8px 15px 8px 15px;
+                text-decoration: none;
+              }
+              
+              .btn:hover {
+                background: #579C87;
+                text-decoration: none;
+              }
+        }
+        #info {
+            padding: 43px;
+            width: 80VW;
+        }
+        .global-hidden {
+            display: flex;
+            padding: 10px;
+            @media (max-width: 500px) {
+                flex-wrap: wrap;
+            }
+        }
+        .music {
+            
+            width: auto;
+            height: 20vh;;
         }
 
     }

@@ -21,11 +21,16 @@ Market Music est une application permettant de gérer plusieurs articles en rapp
 
 * Avoir un Laravel Fonctionelle 
 
+* Crée une base de donner et la liée à Laravel dans le .env ( si se n'est déjà fait)
+
 * Commandes à réaliser dans le terminal pour lancer les migrations et seeders
 
     * php artisan migration
 
     * php artisan db:seed
+
+* Attentiion il faudras sans doute faire :
+    * php composer.phar dump-autoload 
 
 
 ### Database et Seeder
@@ -62,6 +67,30 @@ Plusieurs controller on été mis en place
 
 * Vous pouvez voir la liste de tous les articles
 
+* Sur la page Home j'ai utlisé Javascript pour pouvoir affichcer ou cacher des informations
+
 
 
 ###Remarques
+ * Je n'est pas utiliser de template
+ * j'ai utiliser des generateurs de border et box shadows tel que (https://www.cssmatic.com/box-shadow)
+ * j'ai utiliser Adobe color 
+ * Les images enregitré dans Laravel vienne de pixabay
+ * J'ai utilisé GoogleFont
+
+###Problèmes rencontrés  Déroulement de la certification
+ * La première matinée : J'ai définie mon projet, crée mon Laravel, mes migrations, seeders, et modèles. J'ai eu pas mal de promblème sur mes seeder et mes migrations ( deliveries != deliverys)
+ * L'après-midi c'est très bien passé, création de mes CRUD et debut de mon CSS
+ * La dernière matinée à été consacrée au CSS - Media Queries et JS
+
+###J'aurai aimé développer
+
+ * J'aurai aimée developper plus de fonctionnalitées en JS
+ * J'aurai aimée faire l'authentification pour pouvoir avoir différente interafaces
+ 
+ Je suis contente et fière de la où je suis arrivé après ces 3 mois de formation, Merci
+
+
+
+
+

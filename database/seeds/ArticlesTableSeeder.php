@@ -24,7 +24,7 @@ class ArticlesTableSeeder extends Seeder
             [
                 'name' => 'Guitare Acoustique',
                 'reference' => 'GUIT-AC-32',
-                'description' => 'Cupcake ipsum dolor sit amet jelly beans liquorice chocolate bar toffee. Wafer bear claw pudding soufflé sesame snaps fruitcake apple pie jelly. Lollipop biscuit fruitcake pastry cake lollipop bear claw. Cupcake oat cake lollipop brownie tootsie roll. Cake gummi bears jelly bonbon fruitcake.',
+                'description' => 'Cupcake ipsum dolor sit amet jelly beans liquorice chocolate bar toffee. Wafer bear claw pudding soufflé sesame snaps fupcake oat cake lollipop brownie tootsie roll. Cake gummi bears jelly bonbon fruitcake.',
                 'price' => 3445,
                 'amount' => 8,
                 'type_id' => 1,
@@ -34,7 +34,7 @@ class ArticlesTableSeeder extends Seeder
             [
                 'name' => 'Lesson Guitard 2h',
                 'reference' => 'LESS-67',
-                'description' => 'Cupcake ipsum dolor sit amet jelly beans liquorice chocolate bar toffee. Wafer bear claw pudding soufflé sesame snaps fruitcake apple pie jelly. Lollipop biscuit fruitcake pastry cake lollipop bear claw. Cupcake oat cake lollipop brownie tootsie roll. Cake gummi bears jelly bonbon fruitcake.',
+                'description' => 'Cupcake ipsum dolor sit amet jelly beans liquorice chocolate bar toffee. Wafer bear claw pudding soufflé sesame snaps fruitcake apple pie jelly. Lollipop biscuit fruitcake pastry cakers jelly bonbon fruitcake.',
                 'price' => 445,
                 'amount' => 54,
                 'types_id' => 2,
@@ -44,7 +44,7 @@ class ArticlesTableSeeder extends Seeder
             [
                 'name' => 'Bon cadeau 200€',
                 'reference' => 'BC-24',
-                'description' => 'Cupcake ipsum dolor sit amet jelly beans liquorice chocolate bar toffee. Wafer bear claw pudding soufflé sesame snaps fruitcake apple pie jelly. Lollipop biscuit fruitcake pastry cake lollipop bear claw. Cupcake oat cake lollipop brownie tootsie roll. Cake gummi bears jelly bonbon fruitcake.',
+                'description' => 'Cupcake ipsum dolor sit amet jollipop brownie tootsie roll. Cake gummi bears jelly bonbon fruitcake.',
                 'price' => 200,
                 'amount' => 46,
                 'type_id' => 3,
@@ -54,7 +54,7 @@ class ArticlesTableSeeder extends Seeder
             [
                 'name' => 'Corde guitard',
                 'reference' => 'ACCS-AC-87',
-                'description' => 'Cupcake ipsum dolor sit amet jelly beans liquorice chocolate bar toffee. Wafer bear claw pudding soufflé sesame snaps fruitcake apple pie jelly. Lollipop biscuit fruitcake pastry cake lollipop bear claw. Cupcake oat cake lollipop brownie tootsie roll. Cake gummi bears jelly bonbon fruitcake.',
+                'description' => 'Cupcake ipsum dolor sit ameting soufflé sesame snaps fruitcake apple pie jelly. Lollipop biscuit fruitcake pastry cake lollipop bear claw. Cupcake oat cake lollipop brownie tootsie roll. Cake gummi bears jelly bonbon fruitcake.',
                 'price' => 20,
                 'amount' => 346,
                 'type_id' => 4,
