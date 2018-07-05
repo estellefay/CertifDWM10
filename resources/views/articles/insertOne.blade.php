@@ -1,8 +1,8 @@
 @extends('template') 
 @section('content') 
 
-    <h1>Welcome in insert</h1>
-    <form action="/insertOneAction" method="post">
+    <h1>Insert you Article</h1>
+    <form action="/insertOneAction" method="post" class="form-insert">
         @csrf
         <label for="name">name</label>
         <input type="text" name="name" id="name">
@@ -36,7 +36,7 @@
         <label for="image">Link of image</label>
         <input type="text" name="image" id="">
 
-        <input type="submit" value="Insert">
+        <input type="submit" value="Insert" class="btn">
 
     </form>
 @endsection

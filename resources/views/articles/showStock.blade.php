@@ -1,11 +1,11 @@
 @extends('template') 
 @section('content') 
 
-<h1>stok</h1>
+<h1>Inventory management</h1>
 <div class="global-articles-stock">
     <table>
         <tr>
-            <th>Nom</th>
+            <th>Name</th>
             <th>Référence</th>
             <th>Amount</th>
         </tr>
@@ -19,11 +19,11 @@
                     <form action="/updateAmount" method="post">
                         @csrf
                         <input type="hidden" name="id" value="{{ $article->id }}">
-                        <input type="submit" value="Update Amount">
+                        <input type="submit" value="Update Amount" class="btn">
                     </form>
                 </td>
             </tr>
          @endforeach
-</table>
+    </table>
 </div>
 @endsection

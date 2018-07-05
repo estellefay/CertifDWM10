@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet/less" type="text/css" href="./css/styles.less" />
         <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.5.0-beta.5/less.min.js" ></script>
+        <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway|Source+Sans+Pro" rel="stylesheet">
         <title>Market music</title>
     </head>
     <body>

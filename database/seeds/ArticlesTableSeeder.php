@@ -52,7 +52,7 @@ class ArticlesTableSeeder extends Seeder
     
             ],
             [
-                'name' => 'Corde guittard acoustique',
+                'name' => 'Corde guitard',
                 'reference' => 'ACCS-AC-87',
                 'description' => 'Cupcake ipsum dolor sit amet jelly beans liquorice chocolate bar toffee. Wafer bear claw pudding soufflé sesame snaps fruitcake apple pie jelly. Lollipop biscuit fruitcake pastry cake lollipop bear claw. Cupcake oat cake lollipop brownie tootsie roll. Cake gummi bears jelly bonbon fruitcake.',
                 'price' => 20,

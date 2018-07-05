@@ -1,6 +1,9 @@
 <footer>
-        <h1>Footer</h1>
-
+        <ul>
+                <li>Estelle Fayolle</li>
+                <li>Copiright</li>
+                <li>contact@market-music.fr</li>
+        </ul>
 </footer>
 
 </body>

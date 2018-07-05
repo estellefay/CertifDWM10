@@ -1,5 +1,5 @@
 @extends('template') 
 @section('content') 
 
-<h1>Welcon in the page home</h1>
+<h1>Welcome in the MarketMusic</h1>
 @endsection
