@@ -42,7 +42,6 @@ Market Music est une application permettant de gérer plusieurs articles en rapp
 
 * Utilisation de HowManyTo (Article_Delivery) 
 
-
 ### Controller
 
 Plusieurs controller on été mis en place
@@ -55,7 +54,7 @@ Plusieurs controller on été mis en place
 
 
 
-###Fontionnalitées
+### Fontionnalitées
 
 * Vous pouvez modifier les articles 
 
@@ -71,19 +70,19 @@ Plusieurs controller on été mis en place
 
 
 
-###Remarques
+### Remarques
  * Je n'est pas utiliser de template
  * j'ai utiliser des generateurs de border et box shadows tel que (https://www.cssmatic.com/box-shadow)
  * j'ai utiliser Adobe color 
  * Les images enregitré dans Laravel vienne de pixabay
  * J'ai utilisé GoogleFont
 
-###Problèmes rencontrés  Déroulement de la certification
+### Problèmes rencontrés  Déroulement de la certification
  * La première matinée : J'ai définie mon projet, crée mon Laravel, mes migrations, seeders, et modèles. J'ai eu pas mal de promblème sur mes seeder et mes migrations ( deliveries != deliverys)
  * L'après-midi c'est très bien passé, création de mes CRUD et debut de mon CSS
  * La dernière matinée à été consacrée au CSS - Media Queries et JS
 
-###J'aurai aimé développer
+### J'aurai aimé développer
 
  * J'aurai aimée developper plus de fonctionnalitées en JS
  * J'aurai aimée faire l'authentification pour pouvoir avoir différente interafaces
